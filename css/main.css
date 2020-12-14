@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --logo-font: "Lilita One";
+  --primary-font: "Montserrat";
+
+  --black: #0e0f19;
+  --primary-accent: #5863f8;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
