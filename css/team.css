@@ -64,6 +64,8 @@
 .team__mem-details {
   position: absolute;
   bottom: calc(5% + 8px);
+  width: 100%;
+
   left: 50%;
   transform: translateX(-50%);
 
@@ -71,26 +73,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: max-content;
-}
-
-.team__mem-details {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
 }
 
 .team__mem-descriptions {
-  position: absolute;
-
-  bottom: 30%;
-  padding-left: 16px;
+  padding-left: 32px;
 
   opacity: 0;
 
@@ -100,11 +86,10 @@
 
 .team__mem-description {
   position: relative;
-  width: fit-content;
   font-family: var(--primary-font);
-  font-size: 16px;
+  font-size: 12px;
   color: white;
-  width: 80%;
+  width: 90%;
 
   border-radius: 24px;
   background: #394989;
