@@ -15,7 +15,38 @@
 
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/gallery.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <title>🐤Hack Sparrows</title>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      var secondarySlider = new Splide( '#secondary-slider', {
+        fixedWidth  : 100,
+        height      : 60,
+        gap         : 10,
+        cover       : true,
+        isNavigation: true,
+        focus       : 'center',
+        pagination : false,
+        breakpoints : {
+          '600': {
+            fixedWidth: 66,
+            height    : 40,
+          }
+        },
+      } ).mount();
+      
+      var primarySlider = new Splide( '#primary-slider', {
+        type       : 'fade',
+        height     : '80vh',
+        width      : 'auto',
+        pagination : false,
+        arrows     : false,
+      } ); // do not call mount() here.
+      
+      primarySlider.sync( secondarySlider ).mount();
+    } );
+  </script>
 </head>
 
 <body>
@@ -30,19 +61,69 @@
   </nav>
 
   <div class="container">
-    <div class="panel-main">
-      <img title="test1" src="https://picsum.photos/1920/1200?image=797" id="selected">
+    <div id="primary-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img title="Our Skribbl Game Night" src="./media/skribbl1.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Emily's Trackpad Artwork 'Vomit of Victory'" src="./media/vomit-of-victory.jpg">      
+          </li>
+          <li class="splide__slide">
+            <img title="Can't Bribe Kunal" src="./media/meme1.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Can't Bribe Kunal" src="./media/meme2.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Kunal Ditching Game Nights" src="./media/meme3.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Among Us Hide and Seek" src="./media/meme4.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="iykyk" src="./media/kunal-background.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Pod Retro Doodles" src="./media/doodles.jpg">
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="thumbs">
-      <img title="test1" src="https://picsum.photos/1920/1200?image=797">
-      <img title="test2" src="https://picsum.photos/1920/1200?image=777">
-      <img title="test3" src="https://picsum.photos/1920/1200?image=755">
-      <img title="test4" src="https://picsum.photos/1920/1200?image=838">
-      <img title="test5" src="https://picsum.photos/1920/1200?image=839">
+    <div id="secondary-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img title="Our Skribbl Game Night" src="./media/skribbl1.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Emily's Trackpad Artwork" src="./media/vomit-of-victory.jpg">      
+          </li>
+          <li class="splide__slide">
+            <img title="Can't Bribe Kunal" src="./media/meme1.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Can't Bribe Kunal" src="./media/meme2.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Kunal Ditching Game Nights" src="./media/meme3.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Among Us Hide and Seek" src="./media/meme4.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="iykyk" src="./media/kunal-background.jpg">
+          </li>
+          <li class="splide__slide">
+            <img title="Pod Retro Doodles" src="./media/doodles.jpg">
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <script type="text/javascript" src="./gallery.js"></script>
+
 </body>
 
 </html>
