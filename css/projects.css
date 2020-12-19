@@ -28,12 +28,14 @@
 .projects__grid {
   display: grid;
 
-  width: 90%;
-  height: max-content;
-  margin: 24px auto;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
 
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
+
+  transition: all 0.5s ease;
 }
 
 .projects__project {
@@ -94,12 +96,110 @@
   width: 28px;
 }
 
+.projects__dropdown {
+  padding: 8px 0;
+  border-radius: 24px;
+  transition: all 0.5s ease;
+}
+
+.projects__dropdown-selector {
+  position: relative;
+  width: 90%;
+  margin: 12px auto;
+}
+
+.projects__sprint-heading {
+  font-family: var(--logo-font);
+  font-size: 24px;
+
+  position: relative;
+  left: 36px;
+}
+
+.projects__sprint-description {
+  font-family: var(--primary-font);
+  font-size: 16px;
+
+  position: relative;
+  left: 36px;
+}
+
+.projects__checkbox {
+  position: absolute;
+
+  top: 0px;
+  left: 0%;
+
+  width: 48px;
+  height: 48px;
+
+  opacity: 0;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.projects__dropdown-selector input[type="checkbox"]:checked ~ .projects__grid {
+  height: 100%;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  padding: 4px;
+  opacity: 1;
+}
+
+.projects__dropdown-selector
+  input[type="checkbox"]:checked
+  ~ .projects__arrow-indicator {
+  transform: rotate(135deg);
+}
+
+.projects__arrow-indicator {
+  position: absolute;
+
+  top: 9px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  z-index: 0;
+}
+.projects__arrow-indicator:before,
+.projects__arrow-indicator:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 3px;
+  background-color: var(--black);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.projects__arrow-indicator:after {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 7px;
+  right: -7px;
+}
+
 @media (max-width: 1024px) {
   .projects__grid {
     grid-template-columns: 1fr 1fr;
   }
   .projects__heading {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__dropdown-selector {
+    width: 100%;
   }
 }
 
@@ -118,5 +218,15 @@
 
   .projects__heading {
     font-size: 30px;
+  }
+
+  .projects__sprint-heading {
+    font-family: var(--logo-font);
+    font-size: 20px;
+  }
+
+  .projects__sprint-description {
+    font-family: var(--primary-font);
+    font-size: 12px;
   }
 }
