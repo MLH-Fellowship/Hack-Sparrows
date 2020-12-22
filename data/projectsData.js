@@ -29,7 +29,7 @@ const sprintsJsonStr = `[
 const projectsJsonStr = `{
     "Transcribio" : {
         "name": "Transcribio",
-        "photo": "../media/transcribio.jpg",
+        "photo": "./media/transcribio.jpg",
         "description": "A web application that allows educators to easily generate transcripts for their video lectures and provide a convenient and interactive way for students to navigate through the lecture.",
         "stack": "React, Flask, Firestore, Google Cloud Speech to Text",
         "team": "Chau Vu, Ajwad Shaikh, Rajat Kumar Gupta",
@@ -40,7 +40,7 @@ const projectsJsonStr = `{
     },
     "Connectify" : {
         "name": "Connectify",
-        "photo": "../media/connectify.png",
+        "photo": "./media/connectify.png",
         "description": "Looking for company while studying? Let Connectify handle it for you.",
         "stack": "HTML/CSS, Javascript",
         "team": "Vrushti Mody, Ahad Zai, Julia Liu",
@@ -51,7 +51,7 @@ const projectsJsonStr = `{
     },
     "Studyscape" : {
         "name": "Studyscape",
-        "photo": "../media/studyscape.jpg",
+        "photo": "./media/studyscape.jpg",
         "description": "A planner wep app to manage your school related tasks, multiple online calendars, such as Google Calendar to track your schedule and so many more!",
         "stack": "HTML/CSS, Bootstrap, Javascript",
         "team": "Emily Amspoker, Vividha Rawat, Shilpita Biswas",
@@ -62,7 +62,7 @@ const projectsJsonStr = `{
     },
     "Tech About It" : {
         "name": "Tech About It",
-        "photo": "../media/techaboutit.png",
+        "photo": "./media/techaboutit.png",
         "description": "An iOS/Web app that will help find right speakers for your events and vice versa.",
         "stack": "Flask, MongoDB, React + Material UI",
         "team": "Saurabh Kumar Suryan, Dipanwita Guhathakurta, Mondale Felix",
@@ -73,7 +73,7 @@ const projectsJsonStr = `{
     },
     "Among Ups": {
         "name": "Among Ups",
-        "photo": "../media/amongups.jpg",
+        "photo": "./media/amongups.jpg",
         "description": "Among Ups is a multiplayer platform fighter game (but with a twist!) based on the popular game Among Us.",
         "stack": "Unity (C#)",
         "team": "Chau Vu, Ajwad Shaikh",
@@ -84,7 +84,7 @@ const projectsJsonStr = `{
     },
     "Tooney Tunes": {
         "name": "Tooney Tunes",
-        "photo": "../media/tooneytunes.jpg",
+        "photo": "./media/tooneytunes.jpg",
         "description": "A web-based Phaser game that lets you play a platformer game from your Spotify playlist, and enjoy navigating through platforms, obstacles, collect tunes along the playback of your favorite songs!",
         "stack": "Phaser, Spotify API, melody.ml, Node",
         "team": "Dipanwita Guhathakurta, Mondale Felix, Emily Amspoker",
@@ -95,7 +95,7 @@ const projectsJsonStr = `{
     },
     "Ruby's Adventures": {
         "name": "Ruby's Adventures",
-        "photo": "../media/ruby.jpg",
+        "photo": "./media/ruby.jpg",
         "description": "Ruby's Adventures is essentially a 2-in-one game with a pac-mac like minigame and an endless runner. However, there are twists to the minigames. Ruby can shoot obstacles and kill robots in order to find her way to the end goal.",
         "stack": "Unity (C#)",
         "team": "Vrushti Mody, Ahad Zai",
@@ -106,7 +106,7 @@ const projectsJsonStr = `{
     },
     "Evil in Jaffar": {
         "name": "Evil in Jaffar",
-        "photo": "../media/evilinjaffar.png",
+        "photo": "./media/evilinjaffar.png",
         "description": "2D fantasy platforming game",
         "stack": "Unity (C#)",
         "team": "Saurabh Kumar Suryan, Vividha, Shilpita Biswas",
@@ -117,7 +117,7 @@ const projectsJsonStr = `{
     },
     "MLPrep": {
         "name": "MLPrep",
-        "photo": "../media/mlprep.jpg",
+        "photo": "./media/mlprep.jpg",
         "description": "MLPrep (pronounced MealPrep) is a mobile app that offers recipe recommendations based on a picture of the ingredients, aimed to help reduce food waste by helping users figure out a meal that maximize the usage of their available ingredients 🥗.",
         "stack": "Flutter, Tensorflow, Flask",
         "team": "Chau Vu, Emily Amspoker, Mondale Felix",
@@ -128,7 +128,7 @@ const projectsJsonStr = `{
     },
     "JamSpam": {
         "name": "JamSpam",
-        "photo": "../media/jamspam.png",
+        "photo": "./media/jamspam.png",
         "description": "GitHub App to jam the spam PRs on your repo and keep maintainers stress-free (even in Hacktober 🎃)",
         "stack": "Python, Probot, Octokit, Keras, TensorflowJS",
         "team": "Ajwad Shaikh, Vrushti Mody",
@@ -139,7 +139,7 @@ const projectsJsonStr = `{
     },
     "Social BERTerfly": {
         "name": "Social BERTerfly",
-        "photo": "../media/social-berterfly.jpg",
+        "photo": "./media/social-berterfly.jpg",
         "description": "Predicts your personality out of the 16 Myers-Briggs Type Personalities by your Twitter handle and compares your personality types with the people that you follow.",
         "stack": "Twitter API, tweepy, Flask, Google colaboratory, Keras, BERT, Bootstrap, chartjs",
         "team": "Dipanwita Guhathakurta, Shilpita Biswas, Vividha",
@@ -150,7 +150,7 @@ const projectsJsonStr = `{
     },
     "Flyrics": {
         "name": "Flyrics",
-        "photo": "../media/flyrics.png",
+        "photo": "./media/flyrics.png",
         "description": "Generate lyrics for songs using AI and ML!",
         "stack": "flask, javascript, python, react-native",
         "team": "Ahad Zai, Saurabh Kumar Suryan ",
@@ -161,7 +161,7 @@ const projectsJsonStr = `{
     },
     "Autoflow": {
         "name": "Autoflow",
-        "photo": "../media/autoflow.gif",
+        "photo": "./media/autoflow.gif",
         "description": "A CLI that will automate your project builds and repository initiations for you",
         "stack": "Click, Python, Bash, Pytest, Github Actions",
         "team": "Dipanwita Guhathakurta, Saurabh Kumar Suryan, Shilpita Biswas",
@@ -172,7 +172,7 @@ const projectsJsonStr = `{
     },
     "Alphadocs": {
         "name": "Alphadocs",
-        "photo": "../media/alphadocs.jpg",
+        "photo": "./media/alphadocs.jpg",
         "description": "Automatic docstring generator that supports and generates a number of specified and widely used docstring style conventions for documentation in Python.",
         "stack": "Click, Python",
         "team": "Vividha, Emily Amspoker, Julia Liu",
@@ -183,7 +183,7 @@ const projectsJsonStr = `{
     },
     "Code Of Duty": {
         "name": "Code Of Duty",
-        "photo": "../media/codeofduty.png",
+        "photo": "./media/codeofduty.png",
         "description": "Gamified Sprint System - Making Open Source Contribution and Team Collaboration Fun!",
         "stack": "React, Node, Express, MongoDB, Github API",
         "team": "Chau Vu, Ajwad Shaikh, Vrushti Mody",
@@ -194,7 +194,7 @@ const projectsJsonStr = `{
     },
     "Create.it": {
         "name": "Create.it",
-        "photo": "../media/createit.png",
+        "photo": "./media/createit.png",
         "description": "Quickly create a repo using a command-line interface.",
         "stack": "Github API, Bitbucket API, Python",
         "team": "Ahad Zai, Mondale Felix",
@@ -205,7 +205,7 @@ const projectsJsonStr = `{
     },
     "Censei": {
         "name": "Censei",
-        "photo": "../media/censei.png",
+        "photo": "./media/censei.png",
         "description": "Simple chrome extension to replace explicit words with emojis!",
         "stack": "HTML/CSS, Javascript, Flask",
         "team": "Ahad Zai, Ajwad Shaikh, Emily Amspoker",
@@ -216,7 +216,7 @@ const projectsJsonStr = `{
     },
     "VehiCO": {
         "name": "VehiCO",
-        "photo": "../media/vehico.jpg",
+        "photo": "./media/vehico.jpg",
         "description": "VehiCO (pronounced Vehicle) is a webapp that aims to help users be more environmentally-conscious and make informed decisions by comparing the CO2 emission of different transportation modes for their trip. We also encourage users to take actions and contribute to sustainability efforts by providing a convenient way for them to neutralize their emission by donating to plant trees.",
         "stack": "React, Node, Express, Docker",
         "team": "Chau Vu, Dipanwita Guhathakurta",
@@ -227,7 +227,7 @@ const projectsJsonStr = `{
     },
     "Good Vibes Only": {
         "name": "Good Vibes Only",
-        "photo": "../media/goodvibes.jpg",
+        "photo": "./media/goodvibes.jpg",
         "description": "Are you tired of the constant negative news reports? The Good News Network app delivers daily positive news from around the world. People need a well-balanced media diet, so our daily dose of ‘News to Enthuse’ is like Vitamin G for the spirit.",
         "stack": "Node.js, EJS, Python, MongoDB",
         "team": "Vrushti Mody, Saurabh Kumar Suryan, Vividha",
@@ -238,7 +238,7 @@ const projectsJsonStr = `{
     },
     "Find a Wish": {
         "name": "Find a Wish",
-        "photo": "../media/findawish.png",
+        "photo": "./media/findawish.png",
         "description": "Find an organization you want to grant wishes for!",
         "stack": "React, HTML/CSS, Javscript",
         "team": "Shilpita Biswas, Julia Liu, Mondale Felix",
