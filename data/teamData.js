@@ -32,7 +32,17 @@ const teamJsonStr =`[
         "twitter": "",
         "award": "Comfy Standups"
     },
-
+    {
+        "name": "Vividha",
+        "photo": "./media/vividha.jpg",
+        "2t1l": "I love to travel & I love dogs and cats!",
+        "tech": "Python, Javascript for backend and Bootstrap for frontend",
+        "website": "https://v2dha.github.io/whyiamawesome/",
+        "github": "https://github.com/V2dha",
+        "linkedin": "https://www.linkedin.com/in/vividha-rawat-761905143/",
+        "twitter": "https://twitter.com/vvdha",
+        "award": "Can you hear me?"
+    },
     {
         "name": "Kunal Kushwaha",
         "photo": "./media/kunal.jpg",
@@ -56,15 +66,26 @@ const teamJsonStr =`[
         "award": "Team Player"
     },
     {
-        "name": "Vividha",
-        "photo": "./media/vividha.jpg",
-        "2t1l": "I love to travel & I love dogs and cats!",
-        "tech": "Python, Javascript for backend and Bootstrap for frontend",
-        "website": "https://v2dha.github.io/whyiamawesome/",
-        "github": "https://github.com/V2dha",
-        "linkedin": "https://www.linkedin.com/in/vividha-rawat-761905143/",
-        "twitter": "https://twitter.com/vvdha",
-        "award": "Can you hear me?"
+        "name": "Dipanwita Guhathakurta",
+        "photo": "./media/dipanwita.jpg",
+        "2t1l": "I recorded an album of songs when I was 5, I coordinated my college fest in my sophomore year, The only sport I watch is Formula One",
+        "tech": "Python, Node, Flask, ML, Robotics",
+        "website": "https://susiejojo.github.io/portfolio/",
+        "github": "https://github.com/susiejojo",
+        "linkedin": "hhttps://www.linkedin.com/in/dipanwita-guhathakurta-408ab1178/",
+        "twitter": "https://twitter.com/DipanwitaGuhat1",
+        "award": "Best Username"
+    },
+    {
+        "name": "Vrushti Mody",
+        "photo": "./media/vrushti.jpeg",
+        "2t1l": "I hate momos, I have a twin sister, I hate chocolate",
+        "tech": "Node.js",
+        "website": "https://vrushtimody.me/",
+        "github": "https://github.com/vrushti-mody",
+        "linkedin": "https://www.linkedin.com/in/vrushti-mody/",
+        "twitter": "https://twitter.com/Vrushti_Mody",
+        "award": "All Day Everyday"
     },
     {
         "name": "Shilpita Biswas",
