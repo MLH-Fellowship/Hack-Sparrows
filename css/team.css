@@ -1,0 +1,156 @@
+@import "main.css";
+@import "nav.css";
+
+#team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px 0px;
+
+  overflow: hidden;
+}
+
+.team__heading {
+  position: relative;
+  padding: 0;
+  width: fit-content;
+
+  font-family: var(--logo-font);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--black);
+
+  padding-bottom: 2px;
+  margin: 0 auto;
+}
+
+.team__heading::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--highlight-color);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.team__card-container {
+  position: relative;
+  width: 85%;
+  margin: 24px auto;
+  column-count: 3;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__mem-img {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 8px;
+}
+
+.team__mem-img img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 50px;
+}
+
+.team__mem-details {
+  position: absolute;
+  bottom: calc(5% + 8px);
+  width: 100%;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__mem-descriptions {
+  padding-left: 32px;
+
+  opacity: 0;
+
+  /* transform: translateY(-50%); */
+  transition: all 0.5s ease;
+}
+
+.team__mem-description {
+  position: relative;
+  font-family: var(--primary-font);
+  font-size: 12px;
+  color: white;
+  width: 90%;
+
+  border-radius: 24px;
+  background: #394989;
+  text-align: justify;
+  padding: 12px 16px;
+  margin: 2px;
+}
+
+.team__mem-icons {
+  display: flex;
+}
+
+.team__mem-detail {
+  position: relative;
+  width: fit-content;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: white;
+
+  border-radius: 24px;
+  background: #394989;
+  padding: 6px 12px;
+  margin: 2px;
+}
+
+.team__mem-detail a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.team__mem-img:hover .team__mem-descriptions {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  #team {
+    margin-bottom: initial;
+  }
+  .team__heading {
+    font-size: 36px;
+  }
+  .team__card-container {
+    column-count: 2;
+    margin: 24px auto;
+    width: 90%;
+  }
+  .team__mem-detail {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .team__heading {
+    font-size: 30px;
+  }
+  .team__card-container {
+    column-count: 1;
+    margin: 16px auto;
+  }
+  .team__mem-detail {
+    font-size: 13px;
+  }
+}
