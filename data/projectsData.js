@@ -57,7 +57,7 @@ const projectsJsonStr = `{
         "team": "Emily Amspoker, Vividha Rawat, Shilpita Biswas",
         "github": "https://github.com/MLH-Fellowship/StudyScape",
         "devpost": "https://devpost.com/software/studyscape-fokehb",
-        "link": "",
+        "link": "https://youtu.be/RHA8MtWvvEQ",
         "winner": false
     },
     "Tech About It" : {
@@ -68,7 +68,7 @@ const projectsJsonStr = `{
         "team": "Saurabh Kumar Suryan, Dipanwita Guhathakurta, Mondale Felix",
         "github": "https://github.com/sksuryan/project-three",
         "devpost": "https://devpost.com/software/project-three",
-        "link": "",
+        "link": "https://youtu.be/NaeMgmN6m7E",
         "winner": false
     },
     "Among Ups": {
@@ -222,7 +222,7 @@ const projectsJsonStr = `{
         "team": "Chau Vu, Dipanwita Guhathakurta",
         "github": "https://github.com/cqvu/VehiCO",
         "devpost": "https://devpost.com/software/vehico-hbvgil",
-        "link": "vehico-client.herokuapp.com",
+        "link": "https://vehico-client.herokuapp.com",
         "winner": false
     },
     "Good Vibes Only": {
